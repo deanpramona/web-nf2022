@@ -1,0 +1,76 @@
+body {
+    background-color: blanchedalmond;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#header {
+    background-color: burlywood;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+
+blockquote {
+    text-align: center;
+    background-color: yellow;
+    padding: 10px;
+    border: 1px dotted black;
+}
+
+#soekarno {
+    font-weight: bold;
+}
+
+.ahref {
+    text-align: center;
+    padding: 20px;
+}
+
+.ahref a {
+    margin:0 3px;
+}
+
+.gambar {
+    justify-content: center;
+    margin-left:30%;
+}
+ 
+.gambar img {
+    width: 30%;
+}
+
+.koleksi {
+    background-color: black;
+    padding:0 auto;
+}
+
+.koleksi img {
+    width: 24%;
+}
+
+.promo  {
+    background-color: burlywood;
+    border: 2px solid rgb(241, 180, 99);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.promo h3 {
+    background-color: antiquewhite;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+.Besar {
+    font-size: 50px;
+    color: blue;
+    display: inline;
+}
