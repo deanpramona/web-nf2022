@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: cadetblue;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+main article {
+    background-color: aquamarine;
+    flex: 1;
+    order: 1;
+}
+
+main aside {
+    background-color: antiquewhite;
+    flex: 0 0 20vw;
+    order: 2;
+}
+
+main nav{
+    background-color: azure;
+    order: 3;
+}
+
+footer {
+    background-color: cadetblue;
+    height: 20vh;
+}
+
+header,footer,article,nav,aside {
+    padding: 1em;
+}
