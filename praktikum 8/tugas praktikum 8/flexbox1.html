@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 8.1</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+        }
+
+        .container {
+            min-height: 100vh;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+        }
+
+        header,footer {
+            background-color: khaki;
+            height: 10vh;
+        }
+
+        nav {
+            background-color: palevioletred;
+            width: 20vw;
+        }
+
+        .main {
+            display: flex;
+            flex: 2;
+        }
+
+        .main article {
+            flex: 1;
+            order: 1;
+        }
+
+        .main aside {
+            background-color: aqua;
+            flex: 0 0 20vw;
+            order: 3;
+        }
+
+        nav,header,footer,article,aside {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>Nav</nav>
+    <div class="container">
+        <header>Header</header>
+        <div class="main">
+            <article>Article</article>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </div>
+   
+</body>
+</html>

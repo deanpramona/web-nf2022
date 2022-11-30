@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 8.2</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            background-color: pink;
+        }
+
+        header {
+            background-color: lightblue;
+            height: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: khaki;
+            text-align: center;
+            height: 5px;
+            padding: 20px;
+        }
+
+        header,footer,article, aside{
+            padding: 2em;
+            margin: 10px 10px;
+        }
+
+        #main {
+            display: flex;
+            flex: 1;
+        }
+
+        #main article {
+            background-color: aquamarine;
+            text-align: center;
+            flex: 1;
+            order: 2;
+        }
+
+        #main aside {
+            background-color: lightcoral;
+            text-align: center;
+            flex: 0 0 30vw;
+            margin-right:20px ;
+            order: 1;
+        }
+
+        .img {
+            display: flex;
+        }
+
+        img{
+            /* align-items: center; */
+            justify-items: center;
+            flex-direction: row;
+            margin: 50px 10px 5px 35px;
+            padding: 50px 10px ;
+            /* padding-top: 200px;
+            padding-right: 5px;
+            padding-left: 10px; */
+            width: 190px;
+            height: 190px;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div id="main">
+        <aside>Aside</aside>
+        <article>Article
+        <div id="main">
+            <div class="img">
+                <img src="image/kucing1.jpg" alt="">
+                <img src="image/kucing2.jpg" alt="">
+                <img src="image/kucing3.jpg" alt="">
+            </div>
+        </article> 
+        </div>
+    <div>
+        <footer>Footer</footer>
+    </div>
+    </div>
+</body>
+</html>
