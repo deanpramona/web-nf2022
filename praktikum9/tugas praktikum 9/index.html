@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung jumlah 2 bilangan</title>
+</head>
+<body>
+    <h1>Menghitung jumlah dua bilangan</h1>
+    <label for="">Nilai pertama</label><br>
+    <input id="valuta1" type="number">
+    <br><br>
+    <select name="" id="pilihAku" onchange="Hitung()">
+        <option value="0">--Pilih--</option>
+        <option value="tambah">+</option>
+        <option value="kurang">-</option>
+        <option value="bagi">/</option>
+        <option value="kali">*</option>
+    </select>
+    <br><br>
+     <label for="">Nilai kedua</label><br>
+    <input id="valuta2" type="number"><br>
+    
+    <h3>=</h3>
+    <input type="number" id="hasil" onchange="Hitung()" value="hitung" readonly>
+
+    <script>
+        function Hitung() {
+            let nilai1 = Number(document.getElementById("valuta1").value);
+            let nilai2 = Number(document.getElementById("valuta2").value);
+            let pilihan = document.getElementById("pilihAku").value;
+            let hasil;
+
+            if (pilihan == "tambah") {
+                hasil = nilai1 + nilai2;
+            } else if (pilihan == "kurang") {
+                hasil = nilai1 - nilai2;
+            } else if (pilihan == "bagi") {
+                hasil = nilai1 / nilai2;
+            } else if (pilihan == "kali") {
+                hasil = nilai1 * nilai2;
+            } else {
+                hasil = 0;
+            }
+
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</body>
+</html>
