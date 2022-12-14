@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1000px;
+    padding: 10px 0;
+    background-color: aqua;
+}
+
+fieldset {
+    height: 1000px;
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
